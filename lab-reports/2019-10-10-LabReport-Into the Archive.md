@@ -1,0 +1,17 @@
+# Lab Report: Into the Archives
+
+#### ADRIANA MESSINA
+
+## Process Description
+
+For this week’s lab, or class got to explore some of Northeastern’s archival collections. The lab was held in the Snell basement, where many books were laid out from the school’s archives. The books ranged in size from easily portable in a pocket, to nearly two feet long. Amongst the line up were religious manuscripts, textbooks, and references books. We flipped through and studied the books, then discussed their connections to the readings we had done for class, specifically Mak’s Architectures of the Page. We reflected on how each codex was specifically made for its own intended use, and how its materiality reflected its inner print or text. The book I had looked most closely at was huge and filled with geographical information of London, complete with detailed maps and architectural sketches. I connected this to the Mak’s concepts in that even with a page so physically large, the font had to be small and printed in two columns per recto and verso just to get all the needed information to fit. That ratio was really interesting; the page was really not able to get much bigger without being ridiculous, and these constraints definitely affected how the print was set and how certain choices were made in the creation of this particular codex.Then we moved on to look at the archives collection of artists’ books, which were definitely my favorite piece of the lab. These were not so much books as they were art pieces, designed to be though-provoking presentations of stories, and the many ways they can be told. Some examples of the books are as follows: a pop-up book with accompanying music, a matchbook with words printed on the matches, a circle of a notebook spiral-bound on all sides, and a book of blank pages with holes cut in the middle. Some of my classmates would argue that not each book had a meaning, intention, or “story” per se but I personally liked them all and saw at least the ironic value they held. We then discussed these books much like we had discussed the others, talking about how their form and function were inseparably linked to their content and meaning. Each influenced the other in a seemingly inherent way, which made for a really interesting discussion and lab.
+
+![a photo of the Boundless and Matchbook artists' books](ArtistsBooks.jpg)
+
+## Observations
+
+In the next section of each report, you should in **2-3 paragraphs** move from a literal description of what you did in the lab to a more conceptual set of observations. In brief, you want to home in on those aspects of the lab that raised questions or prompted new insights into the textual technology we investigated in the lab activity. What new ideas occurred to you while working? What surprised, delighted, or frustrated you?
+
+## Analysis
+
+The final section of each report should bring your work in the lab into direct, critical conversation with our readings. In **_3-4 paragraphs_**, you should connect your lab observations to ideas from readings assigned _in the given lab unit_. This prose need not be as formal as a research paper, but it should demonstrate careful thought and preparation. You should integrate the readings explicitly, if possible through direct quotation. Use this writing to experiment with intellectual pairings you think might be generative to your larger thinking and help you prepare for the class’ Unessay projects. Think of your lab reports as an evolving research paper, and take them as seriously as one.
