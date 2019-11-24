@@ -1,4 +1,4 @@
-# Lab Report: Text as Data
+# Lab Report: Corpus Analysis
 
 #### ADRIANA MESSINA
 
