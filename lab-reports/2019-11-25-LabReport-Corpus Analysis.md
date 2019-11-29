@@ -4,44 +4,25 @@
 
 ## Process Description
 
-Load the various libraries we will be using (tidy verse, tidytext, tokenizers)
-Working with a large set - 150 of longest scifi books in the Gutenberg project collection
-Using computational methods to looks at trends across a lot of items
+During this lab, we worked with a farily large set of data: 150 of longest science fiction books in the Gutenberg project collection. By using computational methods, we were able to look at larger trends across a lot of items and a lot of data.
 
-Sentiment analysis - sentiment dictionary algorithms assign each word a level of emotional valence
-It's debated which algorithm best reflects actual language - How you code data determines the results at some level
-Numerical scale from most negative to most positive, words are assigned to different emotional categories (irony can get confusing)
+We utilized the Gutenberg data to create a sentiment analysis. We used a sentiment dictionary algorithm to assign each word a numerical value from most negative to most positive emotional valence. Words are assigned to different emotional categories, such as disgust, joy, or trust. Our specific algorithm classified the appearance of each word with a certain sentiment and got rid of stop words. In our case, we filtered based on the sentiment anger to see what anger words came up most often across the entire corpus (force, death, gun). We also sorted the books by which ones contain the most angry words and created a ratio of angry words to other words to list proportion of angry words to total text length (EmoRatio). We then redid this process with a  different sentiment - I chose disgust and used the same algorithm to find the books that use the most disgust words.
 
-Creating a new value of sentiment - classifies the appearance of each word with a certain sentiment, why do certain things belong in their category? How are dictionaries constructed and what assumptions do they make?
-Gets rid of stop words
+Then we began topic modeling. Latent dirichlet allocation (LDA) organizes collections of documents into topics. Words that often appear next to each other are sorted into the same topics. The algorithm then cycles through many times, looking for words that appear together to create a probability analysis that words belong together. LDA typically works best with smaller chunks of corpus where there might be more semantic meaning, so we divided up our Gutenberg scifi books into chunks. finally, we created a document term matrix (DTM). This listed every document on one axis and every word on the other, filling in the intersections with the count of each term in each document and giving us a way to calculate how likely it is that words will appear together. We took turns running the LDA code, choosing what we want to explore and discussing our findings across the corpus.
 
-Can filter by sentiments - in our case, anger
-What anger words come up most often across the entire corpus (force, death, gun, etc)
-Sort books by which ones contain the most angry words (doesn't account for book length
-
-Created a ratio of angry words to other words to list proportion of angry words to total text length (EmoRatio)
-Store the 9 angriest books in a new variable
-
-Redid this process with a  different sentiment - I chose "disgust" and used it to find the books that use the most "disgust" words
-
-Topic Modeling - latent dirichlet allocation (LDA), any collection of documents is made up of topics
-Finding out what those topics are - words that belong in the same topics often appear next to each other
-Algorithm cycles through many times, looking for words that appear together to create a probability analysis that words belong together
-Typically works best with smaller chunks of corpus where there might be more semantic meaning
-Dividing up our Gutenberg scoff books into chunks
-
-Create a document term matrix (DTM) - lists every document on one axis and every word on the other, filling in the intersections with the count of each term in each document, gives us a way to calculate how likely it is that words will appear together
-
-Took turns running the LDA code
-Choosing what we want to explore - specific words, topic comparisons, etc.
-
-How these technologies change the idea of the textual object - text as data that can be analyzed, put into an algorithm, organized and graphed, etc.
-Digitized text can become very abstract
 
 ## Observations
 
-In the next section of each report, you should in **2-3 paragraphs** move from a literal description of what you did in the lab to a more conceptual set of observations. In brief, you want to home in on those aspects of the lab that raised questions or prompted new insights into the textual technology we investigated in the lab activity. What new ideas occurred to you while working? What surprised, delighted, or frustrated you?
+Something I thought was really interesting throughout this lab was the human side of data analysis. Sentiment analysis specifically raised some questions in my mind: why do certain words belong in their given sentiment category? How are dictionaries constructed and what assumptions do they make? While creating our sentiment analysis, we discussed the debate surrounding which algorithm best reflects actual language. Clearly, a hot topic of data management and analysis is the path to creating more impartial code that avoids making too many assumptions. The codes that process large amounts of data are made by humans, so they all inherently have biases. These biases in the data will ultimately determine the results at some level, so it is crucial to not impose our preconceived notions into our datat analysis. 
+
+During the lab, I also thought a lot about how new technologies are changing the idea of the textual object. This is something we've talked about a lot in class, but was hard for me to grasp until I got to be hands-on in this lab. As an emglish minor, I inherently think of text as meant for being read, understood, and reflected upon. It creates emotions, raises questions, and hopefully provides some new knowledge for its readers. In this lab, however, text was data that could be analyzed, put into an algorithm, organized, and graphed. It created access to new kinds of information that I hadn't considered as part of the text before, such as trends across a corpus. Digitized text can become very abstract, but it can still provide us with knowledge, just in a different way.
 
 ## Analysis
 
-The final section of each report should bring your work in the lab into direct, critical conversation with our readings. In **_3-4 paragraphs_**, you should connect your lab observations to ideas from readings assigned _in the given lab unit_. This prose need not be as formal as a research paper, but it should demonstrate careful thought and preparation. You should integrate the readings explicitly, if possible through direct quotation. Use this writing to experiment with intellectual pairings you think might be generative to your larger thinking and help you prepare for the class’ Unessay projects. Think of your lab reports as an evolving research paper, and take them as seriously as one.
+D'Ignazio and Klein's "What Gets Counted Counts" was really interesting to consider in the conext of this lab. Many algoriths cannot consider or count nonbinary, trans, or gender-nonconofrming people. However, this is at no fault of the algorithm itself but how it was designed. As I discussed in my observation, human biases leak into the way we structure code and the ways we analyze data. When we started our sentiment analysis, we began by just looking at the "angry" words per book. However, it took us all a moment to realize that these results weren't quite what they seemed. We had neglected to take into account book length, which we remedied by creating ratios in the next step of the lab. This showed me how easy it can be for people to misinterpret or ignore data even when it might reveal new or important information.
+
+Similarly, in Cordell and Mullen's "Fugitive Verses" data that may have been lost or ignored is noticed, and reveals new information. Nineteenth-century newspaper poems reveal a lot about the culture in the US at the time, specifically about how people "gleaned" newspapers and interacted with their favorite pieces. Without an algorithm, no one ever would've gone looking through old newspapers to discover these trends. The same concept applies within our lab. None of us would've ever gone looking through ever scifi book in the Gutenberg collection by hand, at least not with much success. Coding made a monumental task manageable and created useful information that we could use to discover and analyze trends.
+
+Data anlysis is something that I really didn't expect to like, but putting it in context with these readings opened me up to the possibilitis coding could have. Especially in our increasingly online and interconnected world, processing tons of data all at once is an important challenge to overcome.It's easy to see this process as the unfeeling work of a computer, but humans have a bigger hand in these problems than I realized. Coding is not just for ad targeting; it can be used for the benefit of social justice, equality, and learning.
+
+P.S. Thank you for the Thanksgiving invitations Prof. Cordell. I am grateful to have the means to go home to for the holidays, and I am equally grateful that you are there for those who don't.
